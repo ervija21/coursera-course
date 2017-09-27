@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Module two solution</title>
+<style>
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+h1 {
+  margin-bottom: 15px;
+}
+body {
+  position: relative;
+}
+div{
+  position: relative;
+}
+
+div.menu {
+  top:0px;
+  border: 1px solid black;
+  background-color: #A52A2A;
+  width: 94%;
+  height: 145px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Helvetica;
+  color: white;
+}
+
+p.title {
+  position:absolute;
+  border: 1px solid black;
+  background-color: green;
+  width:50%;
+  height:30px;
+  margin-top:0;
+  right:0px;
+  top:0px;
+  text-align: center;
+}
+p.text {
+  position:absolute;
+  background: transparent;
+  width:90%;
+  left:10px;
+  top:30px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+/* Simple Responsive Framework. */
+.row {
+  margin-top: 5px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+    height: 150px;
+    border: 1px transparent;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+
+  div.menu-lg-4 {
+  border: 1px solid black;
+  background-color: #A52A2A;
+  width: 94%;
+  height: 145px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Helvetica;
+  color: white;
+}
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+    height: 150px;
+    border: 1px transparent;
+  }
+  .col-md-6 {
+    width: 50%;
+    border: 1px transparent;
+  }
+  .col-md-12 {
+    width: 100%;
+    border: 1px transparent;
+  }
+  div.menu-md-12 {
+  border: 1px solid black;
+  background-color: #A52A2A;
+  width: 97%;
+  height: 145px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Helvetica;
+  color: white;
+}
+
+@media (max-width: 767px) {
+ div.menu-sm-12 {
+  float: left;
+  border: 1px solid black;
+  background-color: #A52A2A;
+  width: 97%;
+  height: 32%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  font-family: Helvetica;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+<h1>Restaurant Menu</h1>
+
+<div class="row">
+  <div class="col-lg-4 col-md-6 menu-sm-12 ">
+    <div class="menu">
+    <p class="title">Chicken</p>
+    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa libero, sodales et iaculis a, malesuada at eros. Nunc pretium turpis quis elit lacinia posuere. </p>
+  </div>
+  </div>
+  <div class="col-lg-4 col-md-6 menu-sm-12 ">
+    <div class="menu">
+          <p class="title">Beef</p>
+    <p class="text">Fusce lobortis, metus ut fringilla pulvinar, nunc elit vulputate enim, vel bibendum lacus dolor eget diam. In pretium sodales egestas. Interdum et malesuada. </p>
+  </div>
+</div>
+  <div class="col-lg-4 col-md-12 menu-sm-12 "><div class="menu menu-md-12 ">
+          <p class="title">Sushi</p>
+    <p class="text">Phasellus eu bibendum neque, vel finibus nisl. Sed urna ante, tincidunt ut semper convallis, tincidunt sed turpis. Nam varius feugiat elit, non tempor metus interdum eget.</p>
+</div></div>
+</div>
+
+</body>
+</html>
